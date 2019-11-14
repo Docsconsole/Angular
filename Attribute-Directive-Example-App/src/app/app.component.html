@@ -1,0 +1,30 @@
+
+
+<div id="ColorDiv">
+
+<h1>Attribute-Directive-Example-App</h1>
+
+
+<p [appBackGroundColor]="'yellow'">Highlight background with Yellow</p>
+
+<p [appBackGroundColor]="color" defaultColor="violet">
+  Highlight background with Violet
+</p>
+
+<h4>Select Color to highlight</h4>
+
+<select id="selectId" name="color" [(ngModel)]="selectedColor" >
+    <option *ngFor="let colorRf of allColors" >
+        {{ colorRf.colorName }}
+    </option>
+</select> 
+
+
+<p [appBackGroundColor]="selectedColor">Highlight background with Selected Color</p>
+
+<p><i>Mouse over To Change Color/Border Color !!</i></p>
+
+<p appBorderColor [appBorderColor]="'yellow'">Highlight Border color</p>
+<p [appColor]="'red'">Highlight Text color</p>
+</div>
+
