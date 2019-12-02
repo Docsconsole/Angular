@@ -1,0 +1,15 @@
+<h3 style="color: #26a69a;padding-left: 4%;">Languages with FirstAndLast index</h3>
+<table style="color: #26a69a;border-top: #26a69a solid 1px;border-bottom: #26a69a solid 1px;table-layout: fixed;width: 450px;">
+	<thead >
+	<th style="color: #26a69a;">Index</th>
+	<th style="color: #26a69a;">Type</th>
+	<th style="color: #26a69a;">Name</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let language of myLanguageList;let i = index;let even = even; let odd = odd;" >
+			<td style="padding-left: 12%;" [ngClass]="{ odd: odd, even: even }">{{i}}</td>
+			<td style="padding-left: 10%;" [ngClass]="{ odd: odd, even: even }">{{language.type}}</td>
+			<td style="padding-left: 10%;" [ngClass]="{ odd: odd, even: even }">{{language.name}}</td>
+		</tr>
+	</tbody>
+</table>

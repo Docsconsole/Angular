@@ -1,0 +1,14 @@
+<h3 style="color: #26a69a;padding-left: 3%;">Languages</h3>
+<table style="color: #26a69a;border-top: #26a69a solid 1px;border-bottom: #26a69a solid 1px;table-layout: fixed;width: 400px;">
+	<thead >
+	
+	<th style="color: #26a69a;">Type</th>
+	<th style="color: #26a69a;">Name</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let language of myLanguageList;">
+			<td style="color: #26a69a;padding-left: 15%;">{{language.type}}</td>
+			<td style="color: #26a69a;padding-left: 20%;">{{language.name}}</td>
+		</tr>
+	</tbody>
+</table>
